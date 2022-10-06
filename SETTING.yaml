@@ -1,0 +1,9 @@
+noncolinear : True # noncolinear calculation
+ini_magm : False # read magmom from POSCAR
+add_U : True # DFT U
+scdm : False # wannier scdm 
+symprec : 0.2 # symmetry tolerance 
+angle_tolerance : 0.1 # symmetry tolerance
+kpath_cutoff : Null # decrease number of high-symmetry kpath
+wannierwin : True # output wannierwin file
+ini_zero : True # force initial magmom as zero

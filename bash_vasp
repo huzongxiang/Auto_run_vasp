@@ -1,0 +1,10 @@
+#!/bin/bash
+#build vasp automatically
+
+# anaconda opencv
+module load group/python/anaconda3/2019.10
+module load intel/2018.4
+conda activate opencv
+
+# auto_run_vasp
+export PATH=$HOME/auto_run_vasp:$PATH

@@ -1,0 +1,24 @@
+#! /work/phy-liuqh/softwares/python/anaconda3/envs/opencv/bin/python3
+
+import os
+import re
+import warnings
+from dft_xml_plot import dft_xml
+from pymatgen.core.structure import Structure
+
+class band:
+    def __init__(self):
+        warnings.filterwarnings('ignore')
+        self.dir_path = os.getcwd()   
+    
+    def band_plot(self):
+        if os.path.exists('vasprun.xml') and os.path.exists('WAVECAR') and os.path.getsize('WAVECAR') != 0:
+            xml_path = os.getcwd()
+            band_xml = dft_xml(xml_path)
+            band_xml.dft_band_plot()
+            del band_xml
+
+if __name__ == '__main__':
+    print('\n----- plot band -----\n')
+    band = band()
+    band.band_plot()
