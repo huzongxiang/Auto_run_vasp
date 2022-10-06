@@ -1,4 +1,4 @@
-#! /work/phy-liuqh/softwares/python/anaconda3/envs/opencv/bin/python3
+#! /work/HOME/softwares/python/anaconda3/envs/opencv/bin/python3
 
 import os
 import re
